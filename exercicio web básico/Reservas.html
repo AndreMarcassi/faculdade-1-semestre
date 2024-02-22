@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Universo Praia Azul</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/media.css">
+</head>
+
+<body>
+
+    <header class="background-header">
+
+        <div class="box-header-1">
+
+            <div class="box-div-header-1 flex">
+
+                <div class="box-centralize-logo flex">
+
+                    <a href="./index.html">
+
+                        <img class="Logo-do-hotel" src="./src/imagens/logotipo.png" alt="Logo do hotel">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="box-div-header-2">
+
+                <ul class="box-buttom-1 flex">
+
+                    <li class="box-buttom-2">
+                        <a class="texte-buttom flex" href="./Acomodacoes.html" data-action="page"> Acomodações </a>
+                    </li>
+
+                    <li class="box-buttom-2">
+                        <a class="texte-buttom flex" href="./Atividades.html" data-action="page"> Atividades </a>
+                    </li>
+
+                    <li class="box-buttom-2">
+                        <a class="texte-buttom flex" href="./Restaurante.html" data-action="page"> Restaurante </a>
+                    </li>
+
+                    <li class="box-buttom-2">
+                        <a class="texte-buttom flex" href="./Reservas.html" data-action="page"> Reservas </a>
+                    </li>
+
+                    <li class="box-buttom-2">
+                        <a class="texte-buttom flex" href="./Pacotes.html" data-action="page"> Pacotes </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="box-div-header-3 flex">
+
+                <div>
+
+                    <h1 class="div-frase">Onde o Céu Encontra o Mar e Você Encontra o Conforto.</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="section-reservas flex">
+
+        <form autocomplete="on" method="post">
+
+            <fieldset class="flex" style="flex-direction: column;">
+
+                <legend>Registro</legend>
+
+                <div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="nome">nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="seu nome">
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="sobrenome">sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required placeholder="seu sobrenome">
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="idade">idade</label>
+                        <input type="number" name="idade" id="idade" required placeholder="sua idade">
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="dia">dia</label>
+                        <input type="date" name="dia" id="dia" required>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="mes">mês</label>
+                        <input type="month" name="mes" id="mes" required>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="email">
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Quartos</legend>
+
+                <div class="flex" style="height: 100%; justify-content: space-around;">
+
+                    <div>
+
+                        <div>
+                            <input class="inputh1" type="radio" name="imagem" id="imagem1" checked>
+                            <label for="imagem1">Quarto Standard</label>
+                        </div>
+
+                        <div>
+                            <input class="inputh1" type="radio" name="imagem" id="imagem2">
+                            <label for="imagem2">Quarto Deluxe</label>
+                        </div>
+
+                        <div>
+                            <input class="inputh1" type="radio" name="imagem" id="imagem3">
+                            <label for="imagem3">Suíte Executiva</label>
+                        </div>
+
+                        <div>
+                            <input class="inputh1" type="radio" name="imagem" id="imagem4">
+                            <label for="imagem4">Suíte Presidencial</label>
+                        </div>
+
+                    </div>
+
+                    <div class="box-img-js">
+
+                        <img class="img-js" id="imagemExibida" src="./src/imagens/Reserva/imagem1.jpg"
+                            alt="Imagem inicial">
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Atividades</legend>
+
+                <div class="div-butao flex">
+
+                    <div>
+
+                        <div>
+                            <input class="item-checkbox" type="checkbox" data-preco="30.00" name="op1" id="op1">
+                            <label for="op1">Eventos e entretenimento noturno</label>
+                        </div>
+
+                        <div>
+                            <input class="item-checkbox" type="checkbox" data-preco="30.00" name="op2" id="op2">
+                            <label for="op2">Atividades ao ar livre</label>
+                        </div>
+
+                        <div>
+                            <input class="item-checkbox" type="checkbox" data-preco="30.00" name="op3" id="op3">
+                            <label for="op3">Spa e tratamentos de bem-estar</label>
+                        </div>
+
+                        <div>
+                            <input class="item-checkbox" type="checkbox" data-preco="30.00" name="op4" id="op4">
+                            <label for="op4">Piscina</label>
+                        </div>
+
+                    </div>
+
+                    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+                </div>
+
+            </fieldset>
+
+            <div class="flex" style="justify-content: space-evenly; margin: 30px 15px 0 15px ;">
+                <input class="butao" type="submit" value="enviar">
+                <input class="butao" type="reset" value="limpar">
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <div class="box-RD-2">
+
+            <div class="box-RD-3 flex">
+
+                <h4 class="text-RD"> instagram: @universopraiaazulhotel </h4>
+
+            </div>
+
+            <div class="box-RD-3 flex">
+
+                <h4 class="text-RD"> facebook: Universo Praia Azul Hotel </h4>
+
+            </div>
+
+            <div class="box-RD-3 flex">
+
+                <h4 class="text-RD"> Twitter: @PraiaAzulHotel </h4>
+
+            </div>
+
+            <div class="box-RD-3 flex">
+
+                <h4 class="text-RD"> WhatsApp: </h4>
+
+            </div>
+
+            <div class="box-RD-3 flex">
+
+                <h4 class="text-RD"> E-mail: universopraiaazulhotel@gmail.com </h4>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // Aguarda o carregamento completo do DOM antes de executar o código
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleciona todos os elementos de input do tipo radio
+            const radios = document.querySelectorAll('input[type="radio"]');
+
+            // Adiciona um ouvinte de eventos para cada radio
+            radios.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    // Obtém o valor do ID do radio
+                    const imagemID = this.id;
+
+                    // Seleciona a imagem com base no ID associado ao radio
+                    const imagemExibida = document.getElementById('imagemExibida');
+
+                    // Atualiza a fonte da imagem com base no radio selecionado
+                    imagemExibida.src = `./src/imagens/Reserva/${imagemID}.jpg`;
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Adiciona um ouvinte de evento a todas as checkboxes com a classe 'item-checkbox'
+        var checkboxes = document.querySelectorAll('.item-checkbox');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                calcularTotal();
+            });
+        });
+
+        // Função para calcular o total com base nas checkboxes marcadas
+        function calcularTotal() {
+            var total = 0;
+
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    // Obtém o preço associado à checkbox
+                    var preco = parseFloat(checkbox.getAttribute('data-preco'));
+                    total += preco;
+                }
+            });
+
+            // Atualiza o elemento HTML que exibe o total
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>

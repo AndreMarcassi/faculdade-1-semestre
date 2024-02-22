@@ -1,0 +1,168 @@
+@media screen and (max-width: 1600px) {
+
+    .section_restaurante {
+        height: 1600px;
+    }
+
+    .box-div-section-1 {
+        width: 1000px;
+    }
+
+    section {
+        height: 1800px;
+    }
+
+    .div-section-cabecalho {
+        font-size: 40px;
+    }
+
+    .div-section-texte {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .section_restaurante {
+        height: 3200px;
+    }
+
+    section {
+        height: 1600px;
+    }
+
+    .foot {
+        height: 800px;
+    }
+
+    .box-RD-1-index {
+        flex-direction: column;
+    }
+
+    .box-RD-2-index {
+        width: 100%;
+    }
+
+    .box-RD-4-index {
+        width: 100%;
+    }
+
+    .map {
+        min-width: 340px;
+        width: 50%;
+    }
+
+    .box-div-section-1 {
+        width: 800px;
+    }
+
+    .div-section-cabecalho {
+        font-size: 30px;
+    }
+
+    .div-section-texte {
+        font-size: 15px;
+    }
+
+    .slide-box {
+        height: 70%;
+    }
+
+    .carousel-btn {
+        height: 32px;
+        width: 32px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .div-section-img {
+        height: 70%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    section {
+        height: 1400px;
+    }
+
+    .app_menu_item {
+        width: 450px;
+    }
+
+    .box-div-section-1 {
+        width: 600px;
+    }
+
+    .div-section-cabecalho {
+        font-size: 25px;
+    }
+
+    .div-section-texte {
+        font-size: 13px;
+    }
+
+    .carousel-btn {
+        height: 18px;
+        width: 18px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section-reservas {
+        flex-direction: column;
+        height: 1100px;
+    }
+
+    .box-img-js {
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    section {
+        height: 1200px;
+    }
+
+    .section_restaurante {
+        height: 3600px;
+    }
+
+    .app_menu_item {
+        width: 440px;
+        height: 250px;
+    }
+
+    .box-div-section-1 {
+        width: 450px;
+    }
+
+    .div-section-cabecalho {
+        font-size: 20px;
+    }
+
+    .div-section-texte {
+        font-size: 10px;
+    }
+
+    .div-butao {
+        flex-direction: column;
+    }
+
+    .box-img-js {
+        height: 65%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    form {
+        max-width: 450px;
+    }
+
+}
